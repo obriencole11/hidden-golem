@@ -1,0 +1,12 @@
+body {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+input {
+	font-size: 1em;
+	width: 20%;
+	margin-top: 1em;
+}

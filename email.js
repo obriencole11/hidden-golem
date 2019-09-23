@@ -11,6 +11,5 @@ $('#submit-form').on('click', function(e) {
     data: $form.serializeObject()
   }).success(
     // do something
-    throw new Error('test');
   );
 })
