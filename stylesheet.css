@@ -1,0 +1,33 @@
+body {
+	color: white;
+	background-color: black;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+form {
+	margin-top: 3em;
+	font-size: 2em;
+}
+
+div {
+	margin-top: 1em;
+}
+
+@font-face {
+    font-family: "wingding";
+    src: url("font/wingding.ttf");
+}
+
+.wingding {
+	font-family: "wingding";
+}
+
+#code {
+	moz-user-select: none; 
+	-webkit-user-select: none; 
+	-ms-user-select:none; 
+	user-select:none;
+	-o-user-select:none;"
+}
+
