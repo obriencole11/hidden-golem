@@ -11,7 +11,30 @@ form {
 }
 
 div {
-	margin-top: 1em;
+	margin-top: 1.5em;
+}
+
+#incorrect {
+	color: red;
+}
+
+#correct {
+	color: white;
+}
+
+label {
+	font-size: 1.5em;
+}
+
+input {
+	margin-top: 0.5em;
+	font-size: 1.5em;
+	font-family: 'Roboto';
+}
+
+button {
+	width: 5em;
+	font-size: 1.5em;
 }
 
 @font-face {

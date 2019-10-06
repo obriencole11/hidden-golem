@@ -40,14 +40,23 @@ var $form = $('#button'),
     url = 'https://script.google.com/macros/s/AKfycbzsaUhM206m648o7x5kDGxtMrZSKYgsaP89d75T9EV3l_pUaW8V/exec'
 
 $('#button').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: getResults()
-  }).always(
-    // do something
-  );
+
+	value = document.getElementById("code").innerHTML.toLowerCase();
+	uservalue = document.getElementById("usercode").value.toLowerCase();
+	if (value == uservalue){
+		e.preventDefault();
+		var jqxhr = $.ajax({
+		url: url,
+		method: "GET",
+		dataType: "json",
+		data: getResults()
+		}).always(
+		);
+		document.getElementById("correct").innerHTML = 'CORRECT CODE SUBMITTED\nCHECK <a href="http://www.secretgolem.club">HERE</a> FOR RESULTS'; 
+		document.getElementById("incorrect").innerHTML = ''; 
+	} else {
+		document.getElementById("incorrect").innerHTML = 'INCORRECT CODE';
+		document.getElementById("correct").innerHTML = '';
+	}
 })
 
