@@ -52,7 +52,7 @@ $('#button').on('click', function(e) {
 		data: getResults()
 		}).always(
 		);
-		document.getElementById("correct").innerHTML = 'CORRECT CODE SUBMITTED\nCHECK <a href="http://www.secretgolem.club">HERE</a> FOR RESULTS'; 
+		document.getElementById("correct").innerHTML = 'CORRECT CODE SUBMITTED<br/>NAME WILL BE ADDED <a href="http://www.secretgolem.club">HERE</a> SHORTLY'; 
 		document.getElementById("incorrect").innerHTML = ''; 
 	} else {
 		document.getElementById("incorrect").innerHTML = 'INCORRECT CODE';

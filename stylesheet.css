@@ -1,8 +1,9 @@
+
 body {
 	color: white;
 	background-color: black;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 form {
@@ -16,25 +17,27 @@ div {
 
 #incorrect {
 	color: red;
+	margin-top: 0.5em;
 }
 
 #correct {
 	color: white;
+	margin-top: 0.5em;
 }
 
 label {
 	font-size: 1.5em;
 }
 
-input {
-	margin-top: 0.5em;
+input {	
 	font-size: 1.5em;
-	font-family: 'Roboto';
+	font-family: 'Montserrat', sans-serif;
 }
 
 button {
 	width: 5em;
 	font-size: 1.5em;
+	font-family: 'Montserrat', sans-serif;
 }
 
 @font-face {
@@ -54,3 +57,22 @@ button {
 	-o-user-select:none;"
 }
 
+@media (max-width: 600px) {
+	form {
+		font-size: 3em;
+	}
+
+	input {	
+		font-size: 2.5em;
+		width: 90%;
+	}
+
+	label {
+		font-size: 2.5em;
+	}
+
+	button {
+		font-size: 2.5em;
+	}
+
+}
