@@ -57,7 +57,14 @@ button {
 	-o-user-select:none;"
 }
 
-@media (max-width: 600px) {
+@media only screen 
+    and (max-device-width : 600px) 
+    and (orientation : portrait) { 
+
+	div {
+		margin-top: 4em;
+	}
+
 	form {
 		font-size: 3em;
 	}
